@@ -1,0 +1,93 @@
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+}
+
+
+/* Navigation */
+
+
+
+
+.icons {
+    height: 100%;
+    width: 90px;
+    text-align: center;
+    background-color: #222;
+    position: fixed;
+}
+
+.icons a {
+    padding: 16px;
+    display: block;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icons a:hover {
+    background-color: #000;
+}
+
+.icons .active {
+    background-color: #4CAF50;
+}
+
+/* hero */
+
+.hero{
+	background-color: #222;
+}
+
+.hero h1{
+	color: #fff;
+	padding: 1.5em;
+}
+
+
+/* content */
+
+.content img{
+	width: 100%;
+}
+
+
+
+/* .tabs-content .content {
+  animation-duration: 2s;
+  animation-name: fadeOut;
+} */
+.tabs-content .content.active {
+  animation-duration: 2s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+
+
+/* main site */
+
+
+
+/* inner page */
+
+
+
+/* footer */
+footer{
+	background-color: #555;
+	width: 100%;
+  	bottom: 0;
+  	
+}
