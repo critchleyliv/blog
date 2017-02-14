@@ -5,54 +5,193 @@ html{
 
 body{
 	position: relative;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  line-height: 1.375em;
+  background-color: rgba(250,210,161, 0.5);
+
+}
+
+
+@media only screen and (max-width: 40em) { 
+
+  body{
+    line-height: 1.25em;
+  }
+
+
 }
 
 
 /* Navigation */
 
-
-
-
 .icons {
     height: 100%;
     width: 90px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #122333;
     position: fixed;
+    padding-top: 3em;
+    border-radius: 5px;
 }
 
 .icons a {
     padding: 16px;
     display: block;
     transition: all 0.3s ease;
-    color: #212121;
+    color: #8e92a5;
     font-size: 36px;
 }
 
 
 .icons a:hover {
-    background-color: #cyan;
-    color: white;
+    color: #04688E;
 }
+
+
+#oc{
+  fill: #122333;
+  padding: 0;
+  margin: auto;
+  width: 21em;
+  top: -7%;
+  left: -6%;
+  z-index: 2;
+  position: fixed;
+}
+
+
 
 
 /* hero */
 
 .hero{
-	background-color: #212121;
+	background-image: url(../img/grabsun.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 20%;
+}
+
+.hero #oc{
+  width: 12em;
+  fill: #122333;
+  position: absolute;
+  top: -3%;
+  left: -5%;
 }
 
 .hero h1{
-	color: #fff;
-	padding: 1.5em;
+	color: #f0a27d;
+  padding: 1.5em;
+  text-align: right;
 }
 
 
 /* content */
 
+
+h1{
+  font-family: 'Istok Web', sans-serif;
+  font-style: bold;
+  font-size: 3em;
+  line-height: 1.05em;
+}
+
+h2{
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h3{
+  font-family: 'Istok Web', sans-serif;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+@media only screen and (max-width: 40em) { 
+
+  h1{
+  font-size: 2em;
+  line-height: 1.25em;
+  }
+
+  h2{
+  font-size: 1.625em;
+  line-height: 1.1363em;
+  }
+
+  h3{
+  font-size: 1.375em;
+  line-height: 1.1363em;
+  }
+
+}
+
+
 .content img{
 	width: 100%;
 }
+
+.blog{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.blog .row{
+  padding-bottom: 3em;
+}
+
+
+.item {
+    display: block;
+     position: relative;
+}
+
+            .item img {
+                width: 100%;
+                z-index: -1;
+            }
+
+            .item .overlay {
+                position: absolute;
+                left: 0%;
+                top:0;
+                width: 0%;
+                height: 100%;
+                background-color: rgba(18,35,51,0.7);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease-in;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease;
+                visibility:hidden;
+                overflow:hidden;
+                
+            }
+
+            .item .overlay h1{
+              color: #8E92A5;
+              text-align: center;
+              margin: auto;
+              padding-top: 1.5em;
+            }
+
+            .item .overlay p{
+              color: #FAD2a1;
+              text-align: center;
+              margin: auto;
+            }
+
+            .item:hover .overlay {
+                top:0;
+                left:0;
+                visibility:visible;
+                width:100%;
+                height:100%;
+            }
+
 
 
 
@@ -75,9 +214,6 @@ body{
 
 
 
-/* main site */
-
-
 
 /* inner page */
 
@@ -85,8 +221,23 @@ body{
 
 /* footer */
 footer{
-	background-color: #555;
+	background-color:rgba(240,162,125, 0.5);
 	width: 100%;
   	bottom: 0;
   	
 }
+
+footer .row{
+  padding-top: 1.5em;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li{
+  padding: 0.5em;
+}
+
+
+
