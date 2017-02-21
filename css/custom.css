@@ -3,115 +3,38 @@ html{
 	box-sizing: border-box;
 }
 
-body{
-	position: relative;
-  font-family: 'Lora', serif;
-  font-size: 1em;
-  line-height: 1.375em;
-  background-color: rgba(250,210,161, 0.5);
-
-}
-
-
-@media only screen and (max-width: 40em) { 
-
-  body{
-    line-height: 1.25em;
-  }
-
-
-}
-
-
-/* Navigation */
-
-.icons {
-    height: 100%;
-    width: 90px;
-    text-align: center;
-    background-color: #122333;
-    position: fixed;
-    padding-top: 3em;
-    border-radius: 5px;
-}
-
-.icons a {
-    padding: 16px;
-    display: block;
-    transition: all 0.3s ease;
-    color: #8e92a5;
-    font-size: 36px;
-}
-
-
-.icons a:hover {
-    color: #04688E;
-}
-
-
-#oc{
-  fill: #122333;
-  padding: 0;
-  margin: auto;
-  width: 21em;
-  top: -7%;
-  left: -6%;
-  z-index: 2;
-  position: fixed;
-}
-
-
-
-
-/* hero */
-
-.hero{
-	background-image: url(../img/grabsun.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 0 20%;
-}
-
-.hero #oc{
-  width: 12em;
-  fill: #122333;
-  position: absolute;
-  top: -3%;
-  left: -5%;
-}
-
-.hero h1{
-	color: #f0a27d;
-  padding: 1.5em;
-  text-align: right;
-}
-
-
-/* content */
-
-
 h1{
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Convergence', sans-serif;
   font-style: bold;
   font-size: 3em;
   line-height: 1.05em;
 }
 
 h2{
-  font-family: 'Lora', serif;
+  font-family: 'Convergence', sans-serif;
   font-style: italic;
   font-size: 2.25em;
   line-height: 1.25em;
 }
 
 h3{
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Convergence', sans-serif;
   font-size: 1.75em;
   line-height: 1.25em;
 }
 
-@media only screen and (max-width: 40em) { 
+
+body{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.375em;
+  background-color: rgba(142, 146, 165, 0.5);
+  color: #122333;
+}
+
+
+@media only screen and (max-width: 60em) { 
 
   h1{
   font-size: 2em;
@@ -128,8 +51,135 @@ h3{
   line-height: 1.1363em;
   }
 
+  body{
+    line-height: 1.25em;
+  }
+
 }
 
+
+/* Navigation */
+
+.icon-bar {
+    background-color: #122333;
+    left: 0;
+    position: fixed;
+}
+
+.icon-bar a {
+    padding: 16px;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.icon-bar a:hover{
+    background-color: #0C1721;
+}
+
+.icon-bar .fa{
+    color: #FAD2A1;
+}
+
+.icon-bar a:hover .fa{
+  color: #f0a27d
+}
+
+
+.icon-bar .fa:hover{
+    color: #f0a27d;
+}
+
+
+
+.icon-bar .show-for-medium-up{
+    height: 100%;
+    width: 90px;
+}
+
+.icon-bar .show-for-small-only{
+    width: 100%;
+    padding-bottom: 0.5em;
+    position: inherit;
+}
+
+/* hero */
+
+.layer{
+	background-image: url(../img/sunfour.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 40%;
+}
+
+
+@media only screen and (max-width: 60em){
+  .layer{
+    background-position: 50% -50%;
+  }
+}
+
+
+.hero{
+  background-color: rgba(142, 146, 165, 0.5);
+  text-align: right;
+}
+
+.hero h1{
+	color: #f0a27d;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  -webkit-text-stroke: 0.5px #122333;
+  line-height: 1;
+}
+
+.hero p{
+  color: #FAD2a1;
+  padding-bottom: 1.5em;
+}  
+
+.hero #oc{
+  fill: #122333;
+  width: 20%;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+
+@media only screen and (max-width: 60em){
+
+  .hero .row{
+    padding-right: 1.5em;
+  }
+}
+
+
+@media only screen and (max-width: 40em){
+
+  .hero #oc{
+    left: 5%;
+    top: 7%;
+  }
+
+  .hero h1{
+    padding-bottom: 0;
+  }
+
+  .hero .row{
+    padding-right: 0.5em;
+  }
+
+}
+
+
+/* content */
+
+.content{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 
 .content img{
 	width: 100%;
@@ -147,7 +197,7 @@ h3{
 
 .item {
     display: block;
-     position: relative;
+    position: relative;
 }
 
             .item img {
@@ -176,6 +226,7 @@ h3{
               text-align: center;
               margin: auto;
               padding-top: 1.5em;
+              font-size: 2em;
             }
 
             .item .overlay p{
@@ -221,9 +272,9 @@ h3{
 
 /* footer */
 footer{
-	background-color:rgba(240,162,125, 0.5);
+	background-color: rgba(142, 146, 165, 0.5);
 	width: 100%;
-  	bottom: 0;
+  bottom: 0;
   	
 }
 
@@ -237,6 +288,14 @@ footer ul{
 
 footer li{
   padding: 0.5em;
+}
+
+footer a{
+  color: #FAD2A1;
+}
+
+footer a:hover{
+  color: #856278;
 }
 
 
