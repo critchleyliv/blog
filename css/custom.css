@@ -82,12 +82,12 @@ body{
 }
 
 .icon-bar a:hover .fa{
-  color: #f0a27d
+  color: #856278;
 }
 
 
 .icon-bar .fa:hover{
-    color: #f0a27d;
+    color: #856278;
 }
 
 
@@ -137,6 +137,8 @@ body{
 .hero p{
   color: #FAD2a1;
   padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  text-align: right;
 }  
 
 .hero #oc{
@@ -145,6 +147,10 @@ body{
   position: absolute;
   top: 5%;
   left: 15%;
+}
+
+.hero #oc:hover{
+  fill: #856278;
 }
 
 
@@ -181,16 +187,36 @@ body{
   padding-bottom: 3em;
 }
 
-.content img{
+img{
 	width: 100%;
 }
 
-.blog{
+
+
+.post img{
+  transform: rotate(90deg);
+  padding: 3em;
+}
+
+.content .about a{
+  color: #856278;
+}
+
+.content .fa{
+  padding: 4%;
+  color: #856278;
+}
+
+.content .fa:hover{
+  color: #f0a27d;
+}
+
+.blog, .portfolio{
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
-.blog .row{
+.blog .row, .portfolio .row{
   padding-bottom: 3em;
 }
 
@@ -262,11 +288,6 @@ body{
 	from { opacity: 1; }
 	to { opacity: 0; }
 }
-
-
-
-
-/* inner page */
 
 
 
